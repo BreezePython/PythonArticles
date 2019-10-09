@@ -1,0 +1,14 @@
+xiaoli:
+  age: 18
+  sex: male
+xiaoming:
+  age: 18
+  sex: male
+---
+codes:
+- Java
+- Python
+- Ruby
+date: 2019-09-03
+result: true
+time: 2019-09-03 01:00:05

@@ -1,0 +1,14 @@
+2019-09-01 LearnLogging.py[line:37] This is debug message
+2019-09-01 LearnLogging.py[line:38] This is info message
+2019-09-01 LearnLogging.py[line:39] This is warning message
+2019-09-01 LearnLogging.py[line:40] This is error message
+2019-09-01 LearnLogging.py[line:41] This is critical message
+
+2019-09-02 00:38:52 LearnLogging.py[line:63] This is info message
+2019-09-02 00:38:52 LearnLogging.py[line:64] This is warning message
+2019-09-02 00:38:52 LearnLogging.py[line:65] This is error message
+2019-09-02 00:38:52 LearnLogging.py[line:66] This is critical message
+2019-09-02 00:40:05 LearnLogging.py[line:63] This is info message
+2019-09-02 00:40:05 LearnLogging.py[line:64] This is warning message
+2019-09-02 00:40:05 LearnLogging.py[line:65] This is error message
+2019-09-02 00:40:05 LearnLogging.py[line:66] This is critical message

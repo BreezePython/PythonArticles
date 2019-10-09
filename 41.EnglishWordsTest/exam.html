@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>清风Python英语自测工具</title>
+    <link rel="icon" href="basic/favicon.ico">
+    <link href="basic/bootstrap.min.css" rel="stylesheet">
+    <link href="basic/index.css" rel="stylesheet">
+    <script src="basic/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="title">清风Python英语单词自测工具</h3>
+        <table class="table table-striped table-hover">
+            <thead>
+                <td>序号</td>
+                <td>翻译</td>
+                <td>音标</td>
+                <td>单词</td>
+                <td>翻牌</td>
+            </thead>
+            <tbody>
+				
+            <tr>
+                <td>1</td>
+                <td>a.贫穷的；贫乏的</td>
+                <td>puə</td>
+                <td><div class='word line1'>poor</div></td>
+                <td><button class='show'line='line1'>查看</button></td>
+            </tr>
+             
+            <tr>
+                <td>2</td>
+                <td>n.意义，意思；意图</td>
+                <td>‘mi:niŋ</td>
+                <td><div class='word line2'>meaning</div></td>
+                <td><button class='show'line='line2'>查看</button></td>
+            </tr>
+             
+            <tr>
+                <td>3</td>
+                <td>vt.谴责，指责；判刑</td>
+                <td>kən’dem</td>
+                <td><div class='word line3'>condemn</div></td>
+                <td><button class='show'line='line3'>查看</button></td>
+            </tr>
+             
+            <tr>
+                <td>4</td>
+                <td>n.闪电，闪电放电</td>
+                <td>‘laitniŋ</td>
+                <td><div class='word line4'>lightning</div></td>
+                <td><button class='show'line='line4'>查看</button></td>
+            </tr>
+             
+            <tr>
+                <td>5</td>
+                <td>vt.犯(错误);干(坏事)</td>
+                <td>kə’mit</td>
+                <td><div class='word line5'>commit</div></td>
+                <td><button class='show'line='line5'>查看</button></td>
+            </tr>
+             
+            <tr>
+                <td>6</td>
+                <td>n.转变，转化；改变</td>
+                <td>kən’və:ʃən</td>
+                <td><div class='word line6'>conversion</div></td>
+                <td><button class='show'line='line6'>查看</button></td>
+            </tr>
+             
+            <tr>
+                <td>7</td>
+                <td>n.名誉，名声；好名声</td>
+                <td>repju(:)’teiʃən</td>
+                <td><div class='word line7'>reputation</div></td>
+                <td><button class='show'line='line7'>查看</button></td>
+            </tr>
+             
+            <tr>
+                <td>8</td>
+                <td>n.消息，信息；通知</td>
+                <td>infə’meiʃən</td>
+                <td><div class='word line8'>information</div></td>
+                <td><button class='show'line='line8'>查看</button></td>
+            </tr>
+             
+            <tr>
+                <td>9</td>
+                <td>a.长的；远的ad.长久</td>
+                <td>lɔŋ</td>
+                <td><div class='word line9'>long</div></td>
+                <td><button class='show'line='line9'>查看</button></td>
+            </tr>
+             
+            <tr>
+                <td>10</td>
+                <td>n.预防；警惕</td>
+                <td>pri’kɔ:ʃən</td>
+                <td><div class='word line10'>precaution</div></td>
+                <td><button class='show'line='line10'>查看</button></td>
+            </tr>
+             
+            </tbody>
+        </table>
+    </div>
+</body>
+<script>
+$("button").click(function() {
+    var word = $("." + $(this).attr('line'));
+    if (word.is(':visible')) {
+        word.slideUp();
+    } else {
+        word.slideDown();
+    }
+
+});
+</script>
+
+</html>

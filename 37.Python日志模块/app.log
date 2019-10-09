@@ -1,0 +1,5 @@
+2019-09-01 auxiliary_module.py[line:5] This is debug message
+2019-09-01 auxiliary_module.py[line:6] This is info message
+2019-09-01 auxiliary_module.py[line:7] This is warning message
+2019-09-01 auxiliary_module.py[line:8] This is error message
+2019-09-01 auxiliary_module.py[line:9] This is critical message

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>清风Python英语自测工具</title>
+    <link rel="icon" href="basic/favicon.ico">
+    <link href="basic/bootstrap.min.css" rel="stylesheet">
+    <link href="basic/index.css" rel="stylesheet">
+    <script src="basic/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="title">清风Python英语单词自测工具</h3>
+        <table class="table table-striped table-hover">
+            <thead>
+                <td>序号</td>
+                <td>翻译</td>
+                <td>音标</td>
+                <td>单词</td>
+                <td>翻牌</td>
+            </thead>
+            <tbody>
+				{content}
+            </tbody>
+        </table>
+    </div>
+</body>
+<script>
+$("button").click(function() {
+    var word = $("." + $(this).attr('line'));
+    if (word.is(':visible')) {
+        word.slideUp();
+    } else {
+        word.slideDown();
+    }
+
+});
+</script>
+
+</html>

@@ -1,0 +1,8 @@
+---
+xiaoming: &info
+  age: 18
+  sex: male
+
+xiaoli:
+  <<: *info
+

@@ -1,0 +1,34 @@
+2019-09-02 01:00:25 LearnLogging.py[line:67] This is info message
+2019-09-02 01:00:25 LearnLogging.py[line:68] This is warning message
+2019-09-02 01:00:25 LearnLogging.py[line:69] This is error message
+2019-09-02 01:00:25 LearnLogging.py[line:70] This is critical message
+2019-09-02 01:00:25 LearnLogging.py[line:65] 94
+2019-09-02 01:00:25 LearnLogging.py[line:67] This is info message
+2019-09-02 01:00:25 LearnLogging.py[line:68] This is warning message
+2019-09-02 01:00:25 LearnLogging.py[line:69] This is error message
+2019-09-02 01:00:25 LearnLogging.py[line:70] This is critical message
+2019-09-02 01:00:25 LearnLogging.py[line:65] 95
+2019-09-02 01:00:25 LearnLogging.py[line:67] This is info message
+2019-09-02 01:00:25 LearnLogging.py[line:68] This is warning message
+2019-09-02 01:00:25 LearnLogging.py[line:69] This is error message
+2019-09-02 01:00:25 LearnLogging.py[line:70] This is critical message
+2019-09-02 01:00:25 LearnLogging.py[line:65] 96
+2019-09-02 01:00:25 LearnLogging.py[line:67] This is info message
+2019-09-02 01:00:25 LearnLogging.py[line:68] This is warning message
+2019-09-02 01:00:25 LearnLogging.py[line:69] This is error message
+2019-09-02 01:00:25 LearnLogging.py[line:70] This is critical message
+2019-09-02 01:00:25 LearnLogging.py[line:65] 97
+2019-09-02 01:00:25 LearnLogging.py[line:67] This is info message
+2019-09-02 01:00:25 LearnLogging.py[line:68] This is warning message
+2019-09-02 01:00:25 LearnLogging.py[line:69] This is error message
+2019-09-02 01:00:25 LearnLogging.py[line:70] This is critical message
+2019-09-02 01:00:25 LearnLogging.py[line:65] 98
+2019-09-02 01:00:25 LearnLogging.py[line:67] This is info message
+2019-09-02 01:00:25 LearnLogging.py[line:68] This is warning message
+2019-09-02 01:00:25 LearnLogging.py[line:69] This is error message
+2019-09-02 01:00:25 LearnLogging.py[line:70] This is critical message
+2019-09-02 01:00:25 LearnLogging.py[line:65] 99
+2019-09-02 01:00:25 LearnLogging.py[line:67] This is info message
+2019-09-02 01:00:25 LearnLogging.py[line:68] This is warning message
+2019-09-02 01:00:25 LearnLogging.py[line:69] This is error message
+2019-09-02 01:00:25 LearnLogging.py[line:70] This is critical message
