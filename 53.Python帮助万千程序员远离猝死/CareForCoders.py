@@ -59,13 +59,13 @@ class CareForCoders:
             if _float_countdown <= 0:
                 showwarning("提示：", message="倒计时必须为正数！")
             else:
+                self.time_entry.config(state=DISABLED)
+                self.submit.config(state=DISABLED)
                 self.countdown_show(_float_countdown * 60)
         except ValueError:
             showwarning("提示：", message="请填写正确的倒计时！")
 
     def countdown_show(self, countdown_sec):
-        self.time_entry.config(state=DISABLED)
-        self.submit.config(state=DISABLED)
         time.sleep(1)
         self.countdown_lb.config(text="休息倒计时: %02d:%02d" %
                                       (countdown_sec // 60, countdown_sec % 60))
@@ -78,9 +78,10 @@ class CareForCoders:
         if countdown_sec < 1:
             # 启动锁屏操作
             close_windows()
+            time.sleep(3)
+            self.countdown_lb.config(text="欢迎主人回来...")
             self.time_entry.config(state=NORMAL)
             self.submit.config(state=NORMAL)
-            self.countdown_lb.config(text="欢迎主人回来...")
             root.update()
             return
         countdown_sec -= 1
@@ -89,10 +90,11 @@ class CareForCoders:
     @staticmethod
     def notice():
         message = Toplevel(root)
-        message.title('提示')
-        Label(message, text='主人，工作这么久了，准备休息下吧！'
-              , justify=CENTER, font=("黑体", '11')).grid()
-        time.sleep(3)
+        message.wm_attributes('-topmost', 1)
+        center_window(message, 400, 200)
+        Label(message, text='主人，辛苦工作这么久了，准备休息下吧！'
+              , justify=CENTER, fg='red', font=("黑体", '15')).grid()
+        time.sleep(5)
         message.destroy()
 
 
