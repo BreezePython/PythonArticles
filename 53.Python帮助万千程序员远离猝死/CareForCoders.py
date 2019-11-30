@@ -31,6 +31,9 @@ def close_windows():
 
 
 class CareForCoders:
+    def __init__(self):
+        self.countdown_lb = None
+
     def user_setting(self):
         note = LabelFrame(root, text="说明", padx=10, pady=10,
                           fg="red", font=("黑体", '11'))
@@ -66,26 +69,24 @@ class CareForCoders:
             showwarning("提示：", message="请填写正确的倒计时！")
 
     def countdown_show(self, countdown_sec):
-        time.sleep(1)
-        self.countdown_lb.config(text="休息倒计时: %02d:%02d" %
-                                      (countdown_sec // 60, countdown_sec % 60))
-        root.update()
-        # 为了避免突如其来的锁屏，倒计时30秒给出提示...
-        if countdown_sec == 10:
-            t = threading.Thread(target=self.notice)
-            t.start()
-
-        if countdown_sec < 1:
-            # 启动锁屏操作
-            close_windows()
-            time.sleep(3)
-            self.countdown_lb.config(text="欢迎主人回来...")
-            self.time_entry.config(state=NORMAL)
-            self.submit.config(state=NORMAL)
+        while countdown_sec:
+            countdown_sec -= 1
+            time.sleep(1)
+            self.countdown_lb.config(text="休息倒计时: %02d:%02d" %
+                                          (countdown_sec // 60, countdown_sec % 60))
             root.update()
-            return
-        countdown_sec -= 1
-        self.countdown_lb.after(1000, self.countdown_show(countdown_sec))
+            # 为了避免突如其来的锁屏，倒计时10秒给出提示...
+            if countdown_sec == 10:
+                t = threading.Thread(target=self.notice)
+                t.start()
+            if countdown_sec < 1:
+                # 启动锁屏操作
+                close_windows()
+                time.sleep(3)
+                self.countdown_lb.config(text="欢迎主人回来...")
+                self.time_entry.config(state=NORMAL)
+                self.submit.config(state=NORMAL)
+                return
 
     @staticmethod
     def notice():
