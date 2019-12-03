@@ -16,7 +16,7 @@ class GetPhotoInfo:
     def __init__(self, photo):
         self.photo = photo
         # 百度地图ak
-        self.ak = 'nYPs4LQ9a4VhVxj55AD69K6zgsRy9o4z'
+        self.ak = ''
         self.location = self.get_photo_info()
 
     def get_photo_info(self, ):
