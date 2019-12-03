@@ -6,7 +6,7 @@
 # @Date     : 2019/12/3 23:33
 # @Software : PyCharm
 # @version  ：Python 3.7.3
-# @File     : Meetlove.py
+# @File     : PrivateDetective.py
 
 import requests
 import exifread
@@ -16,7 +16,7 @@ class GetPhotoInfo:
     def __init__(self, photo):
         self.photo = photo
         # 百度地图ak
-        self.ak = ''
+        self.ak = 'nYPs4LQ9a4VhVxj55AD69K6zgsRy9o4z'
         self.location = self.get_photo_info()
 
     def get_photo_info(self, ):
@@ -59,5 +59,5 @@ class GetPhotoInfo:
 
 
 if __name__ == '__main__':
-    Main = GetPhotoInfo('微信图片_20191203180732.jpg')
+    Main = GetPhotoInfo('微信图片_20191203220201.jpg')
     Main.get_location()
