@@ -9,6 +9,7 @@
 # @File     : CareForCoders.py
 
 from tkinter import *
+
 from tkinter.messagebox import showwarning, showinfo
 import time
 from ctypes import *
@@ -33,6 +34,7 @@ def close_windows():
 class CareForCoders:
     def __init__(self):
         self.countdown_lb = None
+        self.default_minutes = 30
 
     def user_setting(self):
         note = LabelFrame(root, text="说明", padx=10, pady=10,
@@ -51,19 +53,23 @@ class CareForCoders:
         self.countdown_lb = Label(text="休息倒计时:", justify=LEFT,
                                   font=("黑体", '11'))
         self.countdown_lb.grid(row=2)
+
         self.submit = Button(root, text="启动", width=8,
-                             command=lambda: self.get_countdown(self.time_entry.get())
+                             command=lambda: self.get_countdown(self.time_entry.get() if self.time_entry.get() else 30)
                              )
+
         self.submit.grid(row=3, column=0, pady=10)
 
-    def get_countdown(self, countdown):
+
+    def get_countdown(self, countdown=30):
+        self.default_minutes = countdown
         try:
             _float_countdown = float(countdown)
             if _float_countdown <= 0:
                 showwarning("提示：", message="倒计时必须为正数！")
             else:
-                self.time_entry.config(state=DISABLED)
-                self.submit.config(state=DISABLED)
+                self.time_entry.config(state=NORMAL)
+                self.submit.config(state=NORMAL)
                 self.countdown_show(_float_countdown * 60)
         except ValueError:
             showwarning("提示：", message="请填写正确的倒计时！")
@@ -82,10 +88,9 @@ class CareForCoders:
             if countdown_sec < 1:
                 # 启动锁屏操作
                 close_windows()
-                time.sleep(3)
                 self.countdown_lb.config(text="欢迎主人回来...")
-                self.time_entry.config(state=NORMAL)
-                self.submit.config(state=NORMAL)
+                time.sleep(3)
+                self.get_countdown(self.default_minutes)
                 return
 
     @staticmethod
@@ -93,7 +98,7 @@ class CareForCoders:
         message = Toplevel(root)
         message.wm_attributes('-topmost', 1)
         center_window(message, 400, 200)
-        Label(message, text='主人，辛苦工作这么久了，准备休息下吧！'
+        Label(message, text='黄英杰，辛苦工作这么久了，准备休息下吧！'
               , justify=CENTER, fg='red', font=("黑体", '15')).grid()
         time.sleep(5)
         message.destroy()
@@ -101,9 +106,9 @@ class CareForCoders:
 
 if __name__ == '__main__':
     root = Tk()
-    center_window(root, 260, 200)
+    center_window(root, 300, 250)
     root.resizable(width=False, height=False)
-    root.title('久坐提醒 by:清风Python')
+    root.title('久坐提醒 修改by:黄英杰')
     Main = CareForCoders()
     Main.user_setting()
     root.mainloop()
