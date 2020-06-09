@@ -52,25 +52,31 @@ class CarLogo:
                 for car in _cars:
                     # self.car_info()
                     t = threading.Thread(target=self.car_info, args=(urljoin(self.host, car.div.a['href']),))
-                    time.sleep(0.5)
+                    time.sleep(0.1)
                     t.start()
             except:
                 pass
 
     def car_info(self, url):
-        soup = self.get_response(url)
-        left_index = soup.find("div", {"class": "xq-left"}).findAll('p')
-        name = left_index[0].text
-        image_byte = requests.get(left_index[1].img['src']).content
-        right_index = soup.find("ul", {"class": "xq-right"}).findAll('li')
-        founded = right_index[3].span.text
-        models = right_index[5].span.text
-        website = right_index[7].span.text
-        print("Insert Car Logo {}".format(name))
-        _sql = "insert into car_logo(name,image,founded,models,website) values (?,?,?,?,?)"
-        self.db.insert(_sql, (name, Binary(image_byte), founded, models, website))
+        sm.acquire()
+        try:
+            soup = self.get_response(url)
+            left_index = soup.find("div", {"class": "xq-left"}).findAll('p')
+            name = left_index[0].text
+            image_byte = requests.get(left_index[1].img['src'], headers=self.headers).content
+            right_index = soup.find("ul", {"class": "xq-right"}).findAll('li')
+            founded = right_index[3].span.text
+            models = right_index[5].span.text
+            website = right_index[7].span.text
+            print("Insert Car Logo {}".format(name))
+            _sql = "insert into car_logo(name,image,founded,models,website) values (?,?,?,?,?)"
+            self.db.insert(_sql, (name, Binary(image_byte), founded, models, website))
+        except Exception as error:
+            print(error)
+        sm.release()
 
 
 if __name__ == '__main__':
+    sm = threading.Semaphore(5)
     m = CarLogo()
     m.create_url()

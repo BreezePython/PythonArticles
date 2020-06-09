@@ -42,6 +42,8 @@ def run():
         t.start()
         time.sleep(0.1)
     while True:
+        print(threading.current_thread().__dict__)
+        # print(threading.current_thread())
         time.sleep(1)
         print(123)
 

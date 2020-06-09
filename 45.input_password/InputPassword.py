@@ -2,7 +2,7 @@
 # @Author   : 王翔
 # @WeChat   : King_Uranus
 # @公众号    : 清风Python
-# @Date     : 2019/9/26 22:54
+# @Date     : 2019/9/26 22:54.神探程序员，带你千里捉小三
 # @Software : PyCharm
 # @version  ：Python 3.7.3
 # @File     : InputPassword.py

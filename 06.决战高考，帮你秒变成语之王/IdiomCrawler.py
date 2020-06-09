@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author   : 王翔
 # @JianShu  : 清风Python
-# @Date     : 2019/6/6 22.使用Python学习打军体拳:52
+# @Date     : 2019/6/6 22.使用Python学习打军体拳:52.糗事百科爬虫
 # @Software : PyCharm
 # @version  ：Python 3.6.8
 # @File     : IdiomCrawler.py

@@ -9,11 +9,11 @@
 from MyQR import myqr
 
 myqr.run(
-    words='https://u.wechat.com/MBRIKvkCaVjbuxRSdYeaG70',
+    words='https://github.com/BreezePython',
     level='Q',
-    version=6,
-    picture='微信.jpg',
+    version=5,
+    picture='icon.png',
     colorized=True,
-    contrast=1.0,
-    save_name='1.gif'
+    contrast=1.1,
+    save_name='github.png'
 )

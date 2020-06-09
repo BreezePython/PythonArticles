@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author   : 王翔
 # @JianShu  : 清风Python
-# @Date     : 2019/7/2 0:55
+# @Date     : 2019/7/2 0:55.记一次python配置文件的大坑
 # @Software : PyCharm
 # @version  ：Python 3.7.3
 # @File     : selenium_cookie.py

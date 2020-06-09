@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author   : 王翔
 # @JianShu  : 清风Python
-# @Date     : 2019/7/30 22.使用Python学习打军体拳:54
+# @Date     : 2019/7/30 22.使用Python学习打军体拳:54.神探程序员，带你千里捉小三
 # @Software : PyCharm
 # @version  ：Python 3.7.3
 # @File     : GreetingsToQiao.py

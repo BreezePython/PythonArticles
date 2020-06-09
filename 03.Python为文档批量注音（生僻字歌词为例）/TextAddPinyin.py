@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author  : 王翔
 # @JianShu : 一梦七年诗
-# @Date    : 2019/5/23 22.使用Python学习打军体拳:52
+# @Date    : 2019/5/23 22.使用Python学习打军体拳:52.糗事百科爬虫
 # Software : PyCharm
 # version  ：Python 3.6.8
 # @File    : TextAddPinyin.py
@@ -50,5 +50,5 @@ class ChangePinyin:
 
 
 if __name__ == '__main__':
-    Main = ChangePinyin('lyric.txt')
+    Main = ChangePinyin('千字文.txt')
     Main.write_file()

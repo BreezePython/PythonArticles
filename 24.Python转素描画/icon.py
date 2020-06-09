@@ -8,7 +8,8 @@
 
 import base64
 
-with open('1.gif','rb') as f:
+with open('清风Python.gif','rb') as f:
     data = f.read()
 img = base64.b64encode(data)
+print(img)
 

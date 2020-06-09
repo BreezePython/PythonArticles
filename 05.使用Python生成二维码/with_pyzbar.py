@@ -9,7 +9,7 @@
 from pyzbar import pyzbar
 from PIL import Image
 
-image = Image.open('微信.jpg')
+image = Image.open('清风python.jpg')
 txt_list = pyzbar.decode(image)
 for txt in txt_list:
     barcodeData = txt.data.decode("utf-8")
