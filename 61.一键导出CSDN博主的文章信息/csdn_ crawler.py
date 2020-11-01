@@ -14,7 +14,6 @@ import requests
 import openpyxl
 from bs4 import BeautifulSoup
 
-
 class BlogCrawler:
     def __init__(self, url, sheet_name, show):
         self.sheet = sheet_name
