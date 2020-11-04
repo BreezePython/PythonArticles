@@ -9,11 +9,11 @@
 from MyQR import myqr
 
 myqr.run(
-    words='https://github.com/BreezePython',
-    level='Q',
-    version=5,
-    picture='icon.png',
+    words='https://alltodata.cowtransfer.com/s/5b483c08987243',
+    level='H',
+    version=30,
+    picture='收缩原图.jpg',
     colorized=True,
-    contrast=1.1,
-    save_name='github.png'
+    contrast=1.0,
+    save_name='github1.png'
 )
