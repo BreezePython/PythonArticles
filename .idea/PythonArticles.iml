@@ -8,9 +8,6 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="FlaskTests" />
-    <orderEntry type="module" module-name="LeetCode" />
-    <orderEntry type="module" module-name="PythonKnowledge" />
   </component>
   <component name="ReSTService">
     <option name="DOC_DIR" value="$MODULE_DIR$" />

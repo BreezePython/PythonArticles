@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../FlaskTests/.idea/FlaskTests.iml" filepath="$PROJECT_DIR$/../FlaskTests/.idea/FlaskTests.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../LeetCode/.idea/LeetCode.iml" filepath="$PROJECT_DIR$/../LeetCode/.idea/LeetCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PythonArticles.iml" filepath="$PROJECT_DIR$/.idea/PythonArticles.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../PythonKnowledge/.idea/PythonKnowledge.iml" filepath="$PROJECT_DIR$/../PythonKnowledge/.idea/PythonKnowledge.iml" />
     </modules>
   </component>
 </project>
